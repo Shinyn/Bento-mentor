@@ -4,9 +4,6 @@
 
   --Yellow-100: hsl(31, 66%, 93%);
   --Yellow-500: hsl(39, 100%, 71%);
-
-  --White: -hsl(0, 0%, 100%);
-  --Black: -hsl(0, 0%, 7%);
 }
 
 /* Reset */
@@ -18,9 +15,12 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+html {
+  background-color: rgb(250, 250, 250);
+}
+
 body {
   height: 100vh;
-  /* background-color: red; */
 }
 
 img {
@@ -29,20 +29,52 @@ img {
 
 /* Utility */
 
-.background-Y1 {
+.bg-Y1 {
   background-color: var(--Yellow-100);
 }
 
-.background-Y5 {
+.bg-Y5 {
   background-color: var(--Yellow-500);
 }
 
-.background-P1 {
+.bg-P1 {
   background-color: var(--Purple-100);
 }
 
-.background-P5 {
+.bg-P5 {
   background-color: var(--Purple-500);
+}
+
+.bg-W {
+  background-color: white;
+}
+
+.bg-B {
+  background-color: black;
+}
+
+.c-Y1 {
+  color: var(--Yellow-100);
+}
+
+.c-Y5 {
+  color: var(--Yellow-500);
+}
+
+.c-P1 {
+  color: var(--Purple-100);
+}
+
+.c-P5 {
+  color: var(--Purple-500);
+}
+
+.c-W {
+  color: white;
+}
+
+.c-B {
+  color: black;
 }
 
 /* Grid */
@@ -57,7 +89,6 @@ img {
   /* background-color: saddlebrown; */
 
   .card {
-    /* background-color: lime; */
     height: 100%;
     border-radius: 1rem;
     padding: 1rem;
