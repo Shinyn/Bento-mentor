@@ -1,0 +1,78 @@
+:root {
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+
+  --White: -hsl(0, 0%, 100%);
+  --Black: -hsl(0, 0%, 7%);
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  /* background-color: red; */
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utility */
+
+.background-Y1 {
+  background-color: var(--Yellow-100);
+}
+
+.background-Y5 {
+  background-color: var(--Yellow-500);
+}
+
+.background-P1 {
+  background-color: var(--Purple-100);
+}
+
+.background-P5 {
+  background-color: var(--Purple-500);
+}
+
+/* Grid */
+
+.container {
+  /* height: 100%; */
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+
+  /* background-color: saddlebrown; */
+
+  .card {
+    /* background-color: lime; */
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    .card-text {
+      font-size: xx-large;
+      font-weight: 500;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
