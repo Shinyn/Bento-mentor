@@ -120,7 +120,7 @@ img {
     display: grid;
     height: 100%;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
 
     .card-h2 {
       font-size: 2em;
@@ -143,6 +143,10 @@ img {
 
   .card-1 {
     grid-area: card-1;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .card-2 {
@@ -171,14 +175,29 @@ img {
 
   .card-4 {
     grid-area: card-4;
+
+    .card-h2 {
+      width: 10ch;
+      font-size: 1.7rem;
+    }
   }
 
   .card-5 {
     grid-area: card-5;
+    img {
+      /* overflow-y: hidden; */
+    }
   }
 
   .card-6 {
     grid-area: card-6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-h2 {
+      width: 8ch;
+    }
   }
 
   .card-7 {
@@ -195,7 +214,9 @@ img {
 
   .card-8 {
     grid-area: card-8;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 
